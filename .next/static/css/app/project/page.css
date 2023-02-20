@@ -1,0 +1,178 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/app/project/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__KfKRy {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.page_taskForm__z3xU2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 150px;
+  font-size: 1.5em;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.page_inputTask__IwU6i {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.page_addTaskButton__nAHAA {
+  min-width: 125px;
+  max-width: 150px;
+  height: 40px;
+  color: hsl(0, 0%, 95%);
+  font-weight: bold;
+  border: 1px solid hsl(120, 100%, 35%);
+  border-radius: 10px;
+  background-color: hsl(120, 100%, 35%);
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.page_addTaskButton__nAHAA:hover,
+.page_addTaskButton__nAHAA:focus {
+  background-color: hsl(120, 100%, 45%);
+}
+
+.page_taskListContainer____f5t {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  font-size: 1.5em;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page_taskItem__V_WIW {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 10px;
+  padding: 20px 35px;
+  margin: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.page_taskPending__dIgiM {
+  background-color: hsl(60, 100%, 50%);
+}
+
+.page_taskCompleted__5W4MK {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.page_taskItem__V_WIW span {
+  text-transform: capitalize;
+}
+
+.page_itemButton__Letfb {
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.page_checkButton__o4QZ4 img {
+  filter: invert(45%) sepia(76%) saturate(1168%) hue-rotate(86deg)
+    brightness(119%) contrast(127%);
+}
+
+.page_uncheckButton__DuN_g img {
+  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
+    brightness(102%) contrast(117%);
+}
+
+.page_removeButton__o_ld9 img {
+  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
+    brightness(102%) contrast(117%);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[3].use[2]!./node_modules/@next/font/google/target.css?{"path":"src\\app\\project\\page.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/d1d9458b69004127.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/b967158bc7d7a9fb.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/ae9ae6716d4f8bf8.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/c0f5ec5bbf5913b7.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/b1db3e28af9ef94a.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/9c4f34569c9b36ca.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Inter_9c9965';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/_next/static/media/2aaf0723e720e8b9.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_9c9965';src: local("Arial");ascent-override: 90.00%;descent-override: 22.43%;line-gap-override: 0.00%;size-adjust: 107.64%
+}.__className_9c9965 {font-family: '__Inter_9c9965', '__Inter_Fallback_9c9965';font-style: normal
+}
+

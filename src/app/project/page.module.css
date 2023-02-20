@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.taskForm {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 150px;
+  font-size: 1.5em;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.inputTask {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.addTaskButton {
+  min-width: 125px;
+  max-width: 150px;
+  height: 40px;
+  color: hsl(0, 0%, 95%);
+  font-weight: bold;
+  border: 1px solid hsl(120, 100%, 35%);
+  border-radius: 10px;
+  background-color: hsl(120, 100%, 35%);
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.addTaskButton:hover,
+.addTaskButton:focus {
+  background-color: hsl(120, 100%, 45%);
+}
+
+.taskListContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  font-size: 1.5em;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.taskItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 10px;
+  padding: 20px 35px;
+  margin: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.taskPending {
+  background-color: hsl(60, 100%, 50%);
+}
+
+.taskCompleted {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.taskItem span {
+  text-transform: capitalize;
+}
+
+.itemButton {
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkButton img {
+  filter: invert(45%) sepia(76%) saturate(1168%) hue-rotate(86deg)
+    brightness(119%) contrast(127%);
+}
+
+.uncheckButton img {
+  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
+    brightness(102%) contrast(117%);
+}
+
+.removeButton img {
+  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
+    brightness(102%) contrast(117%);
+}
