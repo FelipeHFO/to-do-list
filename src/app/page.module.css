@@ -8,6 +8,7 @@
   color: var(--color-white);
   background-color: var(--color-light-blue);
   padding-top: 10rem;
+  padding-inline: 15px;
 }
 
 .button {

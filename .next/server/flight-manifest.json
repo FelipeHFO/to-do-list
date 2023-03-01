@@ -129,39 +129,10 @@
         ],
         "async": false
       }
-    },
-    "(app-client)/./src/app/project/page.tsx": {
-      "": {
-        "id": "(sc_client)/./src/app/project/page.tsx",
-        "name": "",
-        "chunks": [
-          "app/project/page:app/project/page"
-        ],
-        "async": false
-      },
-      "*": {
-        "id": "(sc_client)/./src/app/project/page.tsx",
-        "name": "*",
-        "chunks": [
-          "app/project/page:app/project/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./src/app/project/page.tsx",
-        "name": "default",
-        "chunks": [
-          "app/project/page:app/project/page"
-        ],
-        "async": false
-      }
     }
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
-    "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page": [
-      "static/css/app/project/page.css"
-    ],
     "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\layout": [
       "static/css/_app-client_src_app_globals_css.css"
     ],
@@ -297,41 +268,6 @@
       "name": "default",
       "chunks": [
         "app-client-internals:app-client-internals"
-      ],
-      "async": false
-    }
-  },
-  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.module.css": {
-    "default": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/project/page.css"
-      ]
-    }
-  },
-  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.tsx": {
-    "": {
-      "id": "(app-client)/./src/app/project/page.tsx",
-      "name": "",
-      "chunks": [
-        "app/project/page:app/project/page"
-      ],
-      "async": false
-    },
-    "*": {
-      "id": "(app-client)/./src/app/project/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/project/page:app/project/page"
-      ],
-      "async": false
-    },
-    "default": {
-      "id": "(app-client)/./src/app/project/page.tsx",
-      "name": "default",
-      "chunks": [
-        "app/project/page:app/project/page"
       ],
       "async": false
     }
