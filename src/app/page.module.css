@@ -1,43 +1,44 @@
 .main {
   display: flex;
-  flex-direction: column;
   gap: 50px;
   align-items: center;
-  padding: 6rem;
+  flex-direction: column;
   min-height: 100vh;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  padding-top: 10rem;
 }
 
 .button {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 330px;
+  max-width: 330px;
   text-align: center;
   border-radius: 10px;
   padding: 15px 20px;
-}
-
-.portfolio {
-  color: hsl(180, 100%, 20%);
-  background-color: hsl(180, 100%, 60%);
-  border: 2px solid hsl(180, 100%, 20%);
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
 
   transition: background-color 0.3s ease;
 }
 
-.portfolio:hover,
-.portfolio:focus {
-  background-color: hsl(180, 100%, 45%);
+.button:hover,
+.button:focus {
+  animation-name: pulse;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.project {
-  color: hsl(180, 10%, 40%);
-  background-color: hsl(0, 0%, 100%);
-  border: 2px solid hsl(180, 10%, 40%);
-
-  transition: background-color 0.3s ease;
-}
-
-.project:hover,
-.project:focus {
-  color: hsl(0, 0%, 50%);
-  background-color: hsl(0, 0%, 90%);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

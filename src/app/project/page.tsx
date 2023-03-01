@@ -42,76 +42,46 @@ export default function Project() {
 
   return (
     <main className={styles.main}>
-      <h1 className={inter.className}>To Do List</h1>
-
       <form onSubmit={addTask} className={styles.taskForm}>
-        <label htmlFor="task" className={styles.labelTask}>
-          Nome da Tarefa
-        </label>
         <input
           id="task"
           type="text"
           name="task"
           required
-          placeholder="Ex.: Estudar NextJS"
+          placeholder="Add a new task"
           value={taskName}
           onChange={(event) => setTaskName(event.target.value)}
           className={styles.inputTask}
         />
         <button type="submit" className={styles.addTaskButton}>
-          Adicionar Tarefa
+          Add
         </button>
       </form>
 
-      {list.length > 0 ? (
-        <div className={styles.taskListContainer}>
-          <h1>Minha Lista</h1>
+      <div className={styles.taskListContainer}>
+        <h1>My Tasks</h1>
+        {list.length > 0 ? (
           <ul className={styles.taskList}>
             {list.map((item) => (
               <li
                 key={item.id}
                 className={`${styles.taskItem} ${
-                  item.status ? styles.taskCompleted : styles.taskPending
+                  item.status ? styles.taskCompleted : ""
                 }`}
               >
+                <input
+                  type="checkbox"
+                  onClick={() => handleCheckItem(item.id)}
+                  className={styles.checkButton}
+                />
                 <span>{item.name}</span>
-                <div className={styles.buttonsItemContainer}>
-                  <button
-                    type="button"
-                    onClick={() => handleCheckItem(item.id)}
-                    className={`${styles.itemButton} ${
-                      item.status ? styles.uncheckButton : styles.checkButton
-                    }`}
-                  >
-                    <Image
-                      src={`${
-                        item.status
-                          ? "/circle-xmark-solid.svg"
-                          : "/circle-check-solid.svg"
-                      }`}
-                      alt="Ícone de checado"
-                      width={35}
-                      height={35}
-                    />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => handleRemoveItem(item.id)}
-                    className={`${styles.itemButton} ${styles.removeButton}`}
-                  >
-                    <Image
-                      src={"/trash-solid.svg"}
-                      alt="Ícone de checado"
-                      width={35}
-                      height={35}
-                    />
-                  </button>
-                </div>
               </li>
             ))}
           </ul>
-        </div>
-      ) : null}
+        ) : (
+          <p className={styles.listEmpty}>Empty list...</p>
+        )}
+      </div>
     </main>
   );
 }

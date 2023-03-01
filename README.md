@@ -11,6 +11,11 @@
 - Novas funcionalidade do NextJS 13, como diretório app, esquema de páginas, páginas com hidratação parcial, layout e head file;
 - CSS Modules.
 
+# Novas Funcionalidades
+
+- Menu lateral do item, onde posso remover ou editar
+- Menu de filtros
+
 # Você consegue ver o projeto rodando!
 
-- [To Do List](https://to-do-list-felipehfo.vercel.app/)
+- To Do List - [clique aqui](https://to-do-list-felipehfo.vercel.app/)

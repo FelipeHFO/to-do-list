@@ -301,15 +301,6 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\node_modules\\@next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\project\\\\page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
-    "default": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/project/page.css"
-      ]
-    }
-  },
   "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.module.css": {
     "default": {
       "id": "null",

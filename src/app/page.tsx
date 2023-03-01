@@ -24,16 +24,16 @@ export default function Home() {
 
       <a
         href="https://portfolio-felipehfo.vercel.app/pt-br"
-        className={`${roboto.className} ${styles.portfolio} ${styles.button}`}
+        className={`${roboto.className} ${styles.button}`}
       >
         Conheça meu portfolio! 💻📃☕
       </a>
 
       <Link
         href={"/project"}
-        className={`${roboto.className} ${styles.project} ${styles.button}`}
+        className={`${roboto.className} ${styles.button}`}
       >
-        Seguir para o Projeto
+        Seguir para o Projeto ➡
       </Link>
     </main>
   );

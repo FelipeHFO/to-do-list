@@ -1,10 +1,12 @@
 .main {
   display: flex;
-  flex-direction: column;
   gap: 50px;
   align-items: center;
-  padding: 6rem;
+  flex-direction: column;
   min-height: 100vh;
+  color: var(--color-blue);
+  background-color: var(--color-light-blue);
+  padding-top: 10rem;
 }
 
 .taskForm {
@@ -12,94 +14,88 @@
   gap: 15px;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 150px;
-  font-size: 1.5em;
-  border: 1px solid gray;
+  width: 350px;
+  min-width: 350px;
+  max-width: 750px;
+  height: 100px;
+  min-height: 100px;
+  max-height: 150px;
   border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .inputTask {
   height: 40px;
-  padding: 0 5px;
+  padding: 0 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
 }
 
 .addTaskButton {
   min-width: 125px;
   max-width: 150px;
   height: 40px;
-  color: hsl(0, 0%, 95%);
   font-weight: bold;
-  border: 1px solid hsl(120, 100%, 35%);
+  border: none;
   border-radius: 10px;
-  background-color: hsl(120, 100%, 35%);
+  color: var(--color-white);
+  background-color: var(--color-blue);
   cursor: pointer;
 
   transition: background-color 0.3s ease;
 }
 
-.addTaskButton:hover,
-.addTaskButton:focus {
-  background-color: hsl(120, 100%, 45%);
+.addTaskButton:hover {
+  background-color: var(--color-light-blue);
 }
 
 .taskListContainer {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  font-size: 1.5em;
-  border: 1px solid hsl(0, 0%, 50%);
+  width: 350px;
+  text-align: center;
   border-radius: 10px;
-  padding: 20px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px 0;
+}
+
+.taskList {
+  list-style: none;
+  padding: 50px;
 }
 
 .taskItem {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  border: 2px solid hsl(0, 0%, 0%);
-  border-radius: 10px;
-  padding: 20px 35px;
-  margin: 20px;
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-blue);
+  padding: 10px;
+  margin-top: 10px;
 
   transition: all 0.3s ease;
 }
 
-.taskPending {
-  background-color: hsl(60, 100%, 50%);
-}
-
 .taskCompleted {
-  background-color: hsl(120, 100%, 50%);
+  text-decoration: line-through;
 }
 
-.taskItem span {
-  text-transform: capitalize;
+.checkButton {
+  position: absolute;
+  left: 10px;
 }
 
-.itemButton {
-  border: none;
-  background-color: transparent;
-  margin: 5px;
-  cursor: pointer;
+.listEmpty {
+  font-size: 1.5rem;
+  margin: 50px;
 }
 
-.checkButton img {
-  filter: invert(45%) sepia(76%) saturate(1168%) hue-rotate(86deg)
-    brightness(119%) contrast(127%);
-}
+@media (width >= 600px) {
+  .taskForm {
+    width: 750px;
+    height: 150px;
+  }
 
-.uncheckButton img {
-  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
-    brightness(102%) contrast(117%);
-}
-
-.removeButton img {
-  filter: invert(22%) sepia(80%) saturate(7030%) hue-rotate(356deg)
-    brightness(102%) contrast(117%);
+  .taskListContainer {
+    width: 750px;
+  }
 }
