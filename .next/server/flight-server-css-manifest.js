@@ -5,6 +5,10 @@ self.__RSC_CSS_MANIFEST={
       "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\node_modules\\@next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
       "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\node_modules\\@next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\page.tsx\",\"import\":\"Roboto\",\"arguments\":[{\"weight\":[\"400\"],\"subsets\":[\"latin\"]}],\"variableName\":\"roboto\"}",
       "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\globals.css"
+    ],
+    "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page": [
+      "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\globals.css",
+      "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.module.css"
     ]
   },
   "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\page.tsx": [
@@ -14,5 +18,9 @@ self.__RSC_CSS_MANIFEST={
   ],
   "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\layout.tsx": [
     "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\globals.css"
+  ],
+  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.tsx": [
+    "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\node_modules\\@next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\project\\\\page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+    "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\app\\project\\page.module.css"
   ]
 }

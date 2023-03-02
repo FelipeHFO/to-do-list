@@ -7,8 +7,7 @@
   font-size: 1.2rem;
   color: var(--color-white);
   background-color: var(--color-light-blue);
-  padding-top: 10rem;
-  padding-inline: 15px;
+  padding: 15px;
 }
 
 .button {
@@ -30,6 +29,12 @@
   animation-duration: 0.8s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+@media (width >= 600px) {
+  .main {
+    padding-top: 10rem;
+  }
 }
 
 @keyframes pulse {
