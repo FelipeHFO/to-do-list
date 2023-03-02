@@ -7,6 +7,10 @@
   --color-light-blue: #8ab3cf;
   --color-gray: #bdd1de;
   --color-light-gray: #e4ebf0;
+  --color-green: #2ad14e;
+  --color-red: #db3434;
+  --color-light-green: #7cf797;
+  --color-light-red: #eb7575;
 }
 
 * {

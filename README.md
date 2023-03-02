@@ -9,6 +9,7 @@
 - Hook useState;
 - Novas funcionalidades do JavaScript, como structuredClone;
 - Novas funcionalidade do NextJS 13, como diretório app, esquema de páginas, páginas com hidratação parcial, layout e head file;
+- Novas funcionalidades do CSS3, como novas formas de comparação no media query.
 - CSS Modules.
 
 # Novas Funcionalidades

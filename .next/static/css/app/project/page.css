@@ -1,8 +1,62 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/Task/Task.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Task_inputTask__1ClFn {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+}
+
+.Task_btn__PNzdq {
+  border: none;
+  border-radius: 10px;
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.Task_btn__PNzdq:hover {
+  color: rgb(91, 91, 91);
+}
+
+.Task_btnSave__ES9lo {
+  background-color: var(--color-green);
+}
+
+.Task_btnSave__ES9lo:hover {
+  background-color: var(--color-light-green);
+}
+
+.Task_btnCancel__Gf_aL {
+  background-color: var(--color-red);
+}
+
+.Task_btnCancel__Gf_aL:hover {
+  background-color: var(--color-light-red);
+}
+
+@media (max-width: 599px) {
+  .Task_inputTask__1ClFn {
+    width: 80px;
+  }
+  .Task_btn__PNzdq {
+    padding: 10px 10px;
+  }
+}
+
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/MenuItem/MenuItem.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
 .MenuItem_menuItem__rqifA {
   position: relative;
+}
+
+.MenuItem_btnShowMenu__ueLnr {
   border: none;
   background-color: transparent;
   padding: 5px;
@@ -19,6 +73,7 @@
   width: 100px;
   background-color: var(--color-white);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 10;
 }
 
 .MenuItem_optionsContainer__ve_EN button {
@@ -40,7 +95,9 @@
 @media (max-width: 600px) {
   .MenuItem_optionsContainer__ve_EN {
     position: absolute;
-    left: -100%;
+    top: 25px;
+    left: -90%;
+    width: 80px;
   }
 }
 
@@ -102,11 +159,12 @@
   background-color: var(--color-white);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 20px 0;
+  margin-bottom: 50px;
 }
 
 .page_taskList__ccD9y {
   list-style: none;
-  padding: 50px;
+  padding: 15px;
 }
 
 .page_taskItem__V_WIW {

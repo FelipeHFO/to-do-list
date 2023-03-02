@@ -1,41 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import useList from "@/hooks/useList";
 import styles from "./page.module.css";
 import { Inter } from "@next/font/google";
-import Image from "next/image";
+import { Task } from "@/contexts/ListContext";
+import { useCallback, useState } from "react";
+import TaskComponent from "@/components/Task/Task";
 import MenuItem from "@/components/MenuItem/MenuItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export interface ListItem {
-  id: number;
-  name: string;
-  status: boolean;
-}
-
 export default function Project() {
-  const [list, setList] = useState(new Array<ListItem>());
+  const { list, setList, handleCheckTask } = useList();
   const [taskName, setTaskName] = useState("");
 
-  const addTask = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    let newTask: ListItem = {
-      id: list.length + 1,
-      name: taskName,
-      status: false,
-    };
+  const addTask = useCallback(
+    (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      let newTask: Task = {
+        id: list.length + 1,
+        name: taskName,
+        status: false,
+        editable: false,
+      };
 
-    setList([...list, newTask]);
-    setTaskName("");
-  };
-
-  const handleCheckItem = (itemId: number) => {
-    let cloneList = structuredClone(list);
-    let [selectedItem] = cloneList.filter((item) => item.id === itemId);
-    selectedItem.status = !selectedItem.status;
-    setList(cloneList);
-  };
+      setList([...list, newTask]);
+      setTaskName("");
+    },
+    [list, setList, taskName],
+  );
 
   return (
     <main className={styles.main}>
@@ -68,11 +61,16 @@ export default function Project() {
               >
                 <input
                   type="checkbox"
-                  onClick={() => handleCheckItem(item.id)}
+                  onClick={() => handleCheckTask(item.id)}
                   className={styles.checkButton}
                 />
-                <span>{item.name}</span>
-                <MenuItem taskId={item.id} list={list} setList={setList} />
+                <TaskComponent
+                  id={item.id}
+                  name={item.name}
+                  status={item.status}
+                  editable={item.editable}
+                />
+                <MenuItem taskId={item.id} />
               </li>
             ))}
           </ul>

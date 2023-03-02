@@ -1,43 +1,42 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
+import useList from "@/hooks/useList";
 import styles from "./MenuItem.module.css";
-import { ListItem } from "@/app/project/page";
-import { Dispatch, SetStateAction, useState } from "react";
 
 interface MenuItemProps {
   taskId: number;
-  list: Array<ListItem>;
-  setList: Dispatch<SetStateAction<ListItem[]>>;
 }
 
-export default function MenuItem({ taskId, list, setList }: MenuItemProps) {
+export default function MenuItem({ taskId }: MenuItemProps) {
+  const { handleRemoveTask, handleEditButtonTask } = useList();
   const [visible, setVisible] = useState(false);
 
-  const handleRemoveItem = () => {
-    setList(list.filter((item) => item.id !== taskId));
-  };
-
   return (
-    <button
-      type="button"
-      onClick={() => setVisible((prevState) => !prevState)}
-      className={styles.menuItem}
-    >
-      <Image
-        src={"/ellipsis-solid.svg"}
-        alt="Ícone de 3 pontos, menu de opções"
-        width={20}
-        height={20}
-      />
+    <div className={styles.menuItem}>
+      <button
+        type="button"
+        onClick={() => setVisible((prevState) => !prevState)}
+        className={styles.btnShowMenu}
+      >
+        <Image
+          src={"/ellipsis-solid.svg"}
+          alt="Ícone de 3 pontos, menu de opções"
+          width={20}
+          height={20}
+        />
+      </button>
       {visible ? (
         <div className={styles.optionsContainer}>
-          <button type="button">Edit</button>
-          <button type="button" onClick={handleRemoveItem}>
+          <button type="button" onClick={() => handleEditButtonTask(taskId)}>
+            Edit
+          </button>
+          <button type="button" onClick={() => handleRemoveTask(taskId)}>
             Remove
           </button>
         </div>
       ) : null}
-    </button>
+    </div>
   );
 }
