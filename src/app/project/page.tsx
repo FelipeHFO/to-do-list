@@ -4,10 +4,11 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import { Inter } from "@next/font/google";
 import Image from "next/image";
+import MenuItem from "@/components/MenuItem/MenuItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
-interface ListItem {
+export interface ListItem {
   id: number;
   name: string;
   status: boolean;
@@ -34,10 +35,6 @@ export default function Project() {
     let [selectedItem] = cloneList.filter((item) => item.id === itemId);
     selectedItem.status = !selectedItem.status;
     setList(cloneList);
-  };
-
-  const handleRemoveItem = (itemId: number) => {
-    setList(list.filter((item) => item.id !== itemId));
   };
 
   return (
@@ -75,6 +72,7 @@ export default function Project() {
                   className={styles.checkButton}
                 />
                 <span>{item.name}</span>
+                <MenuItem taskId={item.id} list={list} setList={setList} />
               </li>
             ))}
           </ul>
