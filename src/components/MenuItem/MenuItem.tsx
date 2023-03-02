@@ -29,7 +29,13 @@ export default function MenuItem({ taskId }: MenuItemProps) {
       </button>
       {visible ? (
         <div className={styles.optionsContainer}>
-          <button type="button" onClick={() => handleEditButtonTask(taskId)}>
+          <button
+            type="button"
+            onClick={() => {
+              handleEditButtonTask(taskId);
+              setVisible(false);
+            }}
+          >
             Edit
           </button>
           <button type="button" onClick={() => handleRemoveTask(taskId)}>
