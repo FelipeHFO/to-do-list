@@ -1,39 +1,46 @@
 .main {
   display: flex;
-  gap: 50px;
-  align-items: center;
+  gap: 30px;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   font-size: 1.2rem;
+  text-align: center;
   color: var(--color-white);
   background-color: var(--color-light-blue);
   padding: 15px;
+  user-select: none;
+}
+
+.menu .button {
+  margin-top: 20px;
 }
 
 .button {
+  display: block;
   min-width: 330px;
   max-width: 330px;
   text-align: center;
   border-radius: 10px;
-  padding: 15px 20px;
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-blue);
+  padding: 15px 20px;
+  margin: 0 auto;
 
   transition: background-color 0.3s ease;
-}
-
-.button:hover,
-.button:focus {
-  animation-name: pulse;
-  animation-duration: 0.8s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 
 @media (width >= 600px) {
   .main {
     padding-top: 10rem;
+  }
+
+  .button:hover,
+  .button:focus {
+    animation-name: pulse;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 }
 

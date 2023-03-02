@@ -21,20 +21,32 @@ export default function Home() {
         tecnologia para uma aplicação igual a um To Do List, somente quero criar
         um novo projeto com as novas features do NextJS 13.
       </p>
+      <menu className={styles.menu}>
+        <a
+          href="https://portfolio-felipehfo.vercel.app/pt-br"
+          target={"_blank"}
+          rel="noreferrer"
+          className={`${roboto.className} ${styles.button}`}
+        >
+          Conheça meu portfolio! 💻📃☕
+        </a>
 
-      <a
-        href="https://portfolio-felipehfo.vercel.app/pt-br"
-        className={`${roboto.className} ${styles.button}`}
-      >
-        Conheça meu portfolio! 💻📃☕
-      </a>
+        <a
+          href="https://github.com/FelipeHFO/to-do-list"
+          target={"_blank"}
+          rel="noreferrer"
+          className={`${roboto.className} ${styles.button}`}
+        >
+          Projeto no GitHub 📌
+        </a>
 
-      <Link
-        href={"/project"}
-        className={`${roboto.className} ${styles.button}`}
-      >
-        Seguir para o Projeto ➡
-      </Link>
+        <Link
+          href={"/project"}
+          className={`${roboto.className} ${styles.button}`}
+        >
+          Seguir para o Projeto ➡
+        </Link>
+      </menu>
     </main>
   );
 }

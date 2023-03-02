@@ -3,40 +3,49 @@
   \*****************************************************************************************************************************************************************************************************************************************************************/
 .page_main__ibFHK {
   display: flex;
-  gap: 50px;
-  align-items: center;
+  gap: 30px;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   font-size: 1.2rem;
+  text-align: center;
   color: var(--color-white);
   background-color: var(--color-light-blue);
   padding: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.page_menu__0z0pl .page_button__unFcb {
+  margin-top: 20px;
 }
 
 .page_button__unFcb {
+  display: block;
   min-width: 330px;
   max-width: 330px;
   text-align: center;
   border-radius: 10px;
-  padding: 15px 20px;
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-blue);
+  padding: 15px 20px;
+  margin: 0 auto;
 
   transition: background-color 0.3s ease;
-}
-
-.page_button__unFcb:hover,
-.page_button__unFcb:focus {
-  animation-name: page_pulse__MOvwy;
-  animation-duration: 0.8s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 
 @media (min-width: 600px) {
   .page_main__ibFHK {
     padding-top: 10rem;
+  }
+
+  .page_button__unFcb:hover,
+  .page_button__unFcb:focus {
+    animation-name: page_pulse__MOvwy;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 }
 
