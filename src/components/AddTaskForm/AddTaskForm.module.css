@@ -1,0 +1,47 @@
+.taskForm {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  min-width: 350px;
+  max-width: 750px;
+  height: 100px;
+  min-height: 100px;
+  max-height: 150px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.inputTask {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+}
+
+.addTaskButton {
+  min-width: 50px;
+  max-width: 150px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+@media (width >= 600px) {
+  .taskForm {
+    width: 750px;
+    height: 150px;
+  }
+
+  .addTaskButton:hover {
+    background-color: var(--color-light-blue);
+  }
+}

@@ -1,55 +1,29 @@
-"use client";
-
-import { useState } from "react";
 import useList from "@/hooks/useList";
 import styles from "./Task.module.css";
-import { Task } from "@/contexts/ListContext";
+import { Task } from "@/interfaces/Task";
+import MenuItem from "../MenuItem/MenuItem";
+import TaskDescription from "../TaskDescription/TaskDescription";
 
 export default function TaskComponent({ id, name, status, editable }: Task) {
-  const { handleChangeTask, handleEditButtonTask } = useList();
-  const [selectedTask, setSelectedask] = useState<Task>({
-    id,
-    name,
-    editable,
-    status,
-  });
+  const { handleCheckTask } = useList();
 
   return (
-    <div className={styles.taskContainer}>
-      {editable && !status ? (
-        <div>
-          <input
-            type="text"
-            autoFocus
-            value={selectedTask.name}
-            onChange={(event) =>
-              setSelectedask({ ...selectedTask, name: event.target.value })
-            }
-            className={styles.inputTask}
-          />
-          <button
-            type="button"
-            onClick={() => {
-              handleChangeTask(selectedTask);
-            }}
-            className={`${styles.btn} ${styles.btnSave}`}
-          >
-            save
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              handleEditButtonTask(selectedTask.id);
-              selectedTask.name = name;
-            }}
-            className={`${styles.btn} ${styles.btnCancel}`}
-          >
-            cancel
-          </button>
-        </div>
-      ) : (
-        <label>{name}</label>
-      )}
-    </div>
+    <li
+      key={id}
+      className={`${styles.taskItem} ${status ? styles.taskCompleted : ""}`}
+    >
+      <input
+        type="checkbox"
+        onClick={() => handleCheckTask(id)}
+        className={styles.checkButton}
+      />
+      <TaskDescription
+        id={id}
+        name={name}
+        status={status}
+        editable={editable}
+      />
+      <MenuItem taskId={id} />
+    </li>
   );
 }

@@ -1,47 +1,22 @@
-.inputTask {
-  height: 40px;
-  padding: 0 10px;
-  border: 1px solid var(--color-gray);
-  border-radius: 10px;
+.taskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 15px;
+  border-bottom: 1px solid var(--color-blue);
+  padding: 10px;
+  margin-top: 10px;
+
+  transition: all 0.3s ease;
 }
 
-.btn {
-  border: none;
-  border-radius: 10px;
-  color: var(--color-white);
-  font-weight: bold;
-  padding: 10px 15px;
-  margin-left: 10px;
-  cursor: pointer;
-
-  transition: background-color 0.3s ease;
+.taskCompleted {
+  text-decoration: line-through;
 }
 
-.btn:hover {
-  color: rgb(91, 91, 91);
-}
-
-.btnSave {
-  background-color: var(--color-green);
-}
-
-.btnSave:hover {
-  background-color: var(--color-light-green);
-}
-
-.btnCancel {
-  background-color: var(--color-red);
-}
-
-.btnCancel:hover {
-  background-color: var(--color-light-red);
-}
-
-@media (width < 600px) {
-  .inputTask {
-    width: 80px;
-  }
-  .btn {
-    padding: 10px 10px;
-  }
+.checkButton {
+  width: 15px;
+  height: 15px;
 }

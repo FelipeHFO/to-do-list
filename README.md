@@ -16,6 +16,7 @@
 
 - Menu lateral do item, onde posso remover ou editar
 - Menu de filtros
+- Conexão com a API e CRUD simples para as Tarefas
 
 # Você consegue ver o projeto rodando!
 

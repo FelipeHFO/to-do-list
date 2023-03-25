@@ -8,20 +8,14 @@ import {
   SetStateAction,
   DetailedHTMLProps,
 } from "react";
-
-export interface Task {
-  id: number;
-  name: string;
-  status: boolean;
-  editable: boolean;
-}
+import { Task } from "@/interfaces/Task";
 
 interface ListContextProps {
   list: Array<Task>;
   handleChangeTask(task: Task): void;
-  handleCheckTask: (taskId: number) => void;
-  handleRemoveTask: (taskId: number) => void;
-  handleEditButtonTask: (taskId: number) => void;
+  handleCheckTask: (taskId: string) => void;
+  handleRemoveTask: (taskId: string) => void;
+  handleEditButtonTask: (taskId: string) => void;
   setList: Dispatch<SetStateAction<Task[]>>;
 }
 
@@ -32,21 +26,21 @@ export default function ListProvider({
 }: DetailedHTMLProps<HTMLAttributes<HTMLBodyElement>, HTMLBodyElement>) {
   const [toDoList, setToDoList] = useState<Array<Task>>([]);
 
-  const handleCheckTask = (taskId: number) => {
+  const handleCheckTask = (taskId: string) => {
     let cloneList = structuredClone(toDoList);
     let [selectedTask] = cloneList.filter((task) => task.id === taskId);
     selectedTask.status = !selectedTask.status;
     setToDoList(cloneList);
   };
 
-  const handleEditButtonTask = (taskId: number) => {
+  const handleEditButtonTask = (taskId: string) => {
     let cloneList = structuredClone(toDoList);
     let [selectedTask] = cloneList.filter((task) => task.id === taskId);
     selectedTask.editable = !selectedTask.editable;
     setToDoList(cloneList);
   };
 
-  const handleRemoveTask = (taskId: number) => {
+  const handleRemoveTask = (taskId: string) => {
     setToDoList(toDoList.filter((task) => task.id !== taskId));
   };
 

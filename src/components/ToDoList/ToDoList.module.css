@@ -1,0 +1,25 @@
+.taskListContainer {
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.taskList {
+  list-style: none;
+  padding: 15px;
+}
+
+.listEmpty {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+
+@media (width >= 600px) {
+  .taskListContainer {
+    width: 750px;
+  }
+}

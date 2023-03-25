@@ -378,6 +378,15 @@ self.__RSC_MANIFEST={
       ]
     }
   },
+  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\components\\AddTaskForm\\AddTaskForm.module.css": {
+    "default": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/project/page.css"
+      ]
+    }
+  },
   "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\components\\MenuItem\\MenuItem.module.css": {
     "default": {
       "id": "null",
@@ -387,7 +396,25 @@ self.__RSC_MANIFEST={
       ]
     }
   },
+  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\components\\TaskDescription\\TaskDescription.module.css": {
+    "default": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/project/page.css"
+      ]
+    }
+  },
   "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\components\\Task\\Task.module.css": {
+    "default": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/project/page.css"
+      ]
+    }
+  },
+  "C:\\Users\\Felipe Oliveira\\Documents\\GitHub\\to-do-list\\src\\components\\ToDoList\\ToDoList.module.css": {
     "default": {
       "id": "null",
       "name": "default",

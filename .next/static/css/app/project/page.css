@@ -1,54 +1,3 @@
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/Task/Task.module.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
-.Task_inputTask__1ClFn {
-  height: 40px;
-  padding: 0 10px;
-  border: 1px solid var(--color-gray);
-  border-radius: 10px;
-}
-
-.Task_btn__PNzdq {
-  border: none;
-  border-radius: 10px;
-  color: var(--color-white);
-  font-weight: bold;
-  padding: 10px 15px;
-  margin-left: 10px;
-  cursor: pointer;
-
-  transition: background-color 0.3s ease;
-}
-
-.Task_btn__PNzdq:hover {
-  color: rgb(91, 91, 91);
-}
-
-.Task_btnSave__ES9lo {
-  background-color: var(--color-green);
-}
-
-.Task_btnSave__ES9lo:hover {
-  background-color: var(--color-light-green);
-}
-
-.Task_btnCancel__Gf_aL {
-  background-color: var(--color-red);
-}
-
-.Task_btnCancel__Gf_aL:hover {
-  background-color: var(--color-light-red);
-}
-
-@media (max-width: 599px) {
-  .Task_inputTask__1ClFn {
-    width: 80px;
-  }
-  .Task_btn__PNzdq {
-    padding: 10px 10px;
-  }
-}
-
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/MenuItem/MenuItem.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
@@ -101,21 +50,116 @@
   }
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/app/project/page.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
-.page_main__KfKRy {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  color: var(--color-blue);
-  background-color: var(--color-light-blue);
-  padding-top: 10rem;
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/TaskDescription/TaskDescription.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.TaskDescription_inputTask__joc0X {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
 }
 
-.page_taskForm__z3xU2 {
+.TaskDescription_btn__uOO4y {
+  border: none;
+  border-radius: 10px;
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.TaskDescription_btn__uOO4y:hover {
+  color: rgb(91, 91, 91);
+}
+
+.TaskDescription_btnSave__tl7Di {
+  background-color: var(--color-green);
+}
+
+.TaskDescription_btnSave__tl7Di:hover {
+  background-color: var(--color-light-green);
+}
+
+.TaskDescription_btnCancel__Zei8P {
+  background-color: var(--color-red);
+}
+
+.TaskDescription_btnCancel__Zei8P:hover {
+  background-color: var(--color-light-red);
+}
+
+@media (max-width: 599px) {
+  .TaskDescription_inputTask__joc0X {
+    width: 80px;
+  }
+  .TaskDescription_btn__uOO4y {
+    padding: 10px 10px;
+  }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/Task/Task.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Task_taskItem__U7HMq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 15px;
+  border-bottom: 1px solid var(--color-blue);
+  padding: 10px;
+  margin-top: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.Task_taskCompleted__pYJhr {
+  text-decoration: line-through;
+}
+
+.Task_checkButton__ZXJEn {
+  width: 15px;
+  height: 15px;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/ToDoList/ToDoList.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.ToDoList_taskListContainer___ajJx {
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.ToDoList_taskList__n6_bS {
+  list-style: none;
+  padding: 15px;
+}
+
+.ToDoList_listEmpty__8ICYB {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+
+@media (min-width: 600px) {
+  .ToDoList_taskListContainer___ajJx {
+    width: 750px;
+  }
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/components/AddTaskForm/AddTaskForm.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.AddTaskForm_taskForm__r3MsZ {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -131,14 +175,14 @@
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.page_inputTask__IwU6i {
+.AddTaskForm_inputTask__YAwuh {
   height: 40px;
   padding: 0 10px;
   border: 1px solid var(--color-gray);
   border-radius: 10px;
 }
 
-.page_addTaskButton__nAHAA {
+.AddTaskForm_addTaskButton__mkp0z {
   min-width: 50px;
   max-width: 150px;
   height: 40px;
@@ -152,61 +196,28 @@
   transition: background-color 0.3s ease;
 }
 
-.page_taskListContainer____f5t {
-  width: 350px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: var(--color-white);
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 20px 0;
-  margin-bottom: 50px;
-}
-
-.page_taskList__ccD9y {
-  list-style: none;
-  padding: 15px;
-}
-
-.page_taskItem__V_WIW {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1.5rem;
-  line-height: 15px;
-  border-bottom: 1px solid var(--color-blue);
-  padding: 10px;
-  margin-top: 10px;
-
-  transition: all 0.3s ease;
-}
-
-.page_taskCompleted__5W4MK {
-  text-decoration: line-through;
-}
-
-.page_checkButton__o4QZ4 {
-  width: 15px;
-  height: 15px;
-}
-
-.page_listEmpty__ZvvS9 {
-  font-size: 1.5rem;
-  margin: 50px;
-}
-
 @media (min-width: 600px) {
-  .page_taskForm__z3xU2 {
+  .AddTaskForm_taskForm__r3MsZ {
     width: 750px;
     height: 150px;
   }
 
-  .page_addTaskButton__nAHAA:hover {
+  .AddTaskForm_addTaskButton__mkp0z:hover {
     background-color: var(--color-light-blue);
   }
+}
 
-  .page_taskListContainer____f5t {
-    width: 750px;
-  }
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[7].use[3]!./src/app/project/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__KfKRy {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--color-blue);
+  background-color: var(--color-light-blue);
+  padding-top: 10rem;
 }
 
