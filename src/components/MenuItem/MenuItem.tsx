@@ -6,7 +6,7 @@ import useList from "@/hooks/useList";
 import styles from "./MenuItem.module.css";
 
 interface MenuItemProps {
-  taskId: string;
+  taskId: number;
 }
 
 export default function MenuItem({ taskId }: MenuItemProps) {

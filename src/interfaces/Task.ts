@@ -1,5 +1,5 @@
 export interface Task {
-  id: string;
+  id: number;
   name: string;
   status: boolean;
   editable: boolean;

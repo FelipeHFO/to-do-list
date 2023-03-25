@@ -1,12 +1,13 @@
 import useList from "@/hooks/useList";
 import { Task } from "@/interfaces/Task";
 import styles from "./AddTaskForm.module.css";
-import { useCallback, useId, useState } from "react";
+import { useCallback, useState } from "react";
 
 export default function AddTaskForm() {
   const [taskName, setTaskName] = useState("");
   const { list, setList } = useList();
-  const id = useId();
+
+  let id = list.length + 1;
 
   const addTask = useCallback(
     (event: React.FormEvent<HTMLFormElement>) => {
